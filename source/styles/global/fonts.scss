@@ -1,1 +1,3 @@
-/* здесь подключите шрифты */
+@include font-face("Verdana", url("../../fonts/Verdana.woff2"), normal, 400);
+@include font-face("Verdana", url("../../fonts/Verdana-Bold.woff2"), normal, 700);
+

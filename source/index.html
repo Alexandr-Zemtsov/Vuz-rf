@@ -1,13 +1,736 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
-  <head>
-    <meta charset="UTF-8">
-    <title>Название проекта</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="stylesheet" href="styles/styles.css">
-    <script src="scripts/index.js" defer></script>
-  </head>
-  <body class="page__body">
-    <header class="header">Шапка</header>
-  </body>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Название проекта</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="icon" href="#">
+  <link rel="icon" href="#" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="#">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="styles/styles.css">
+
+</head>
+
+<body class="page__body">
+
+  <!-- ======HEADER====== -->
+  <header class="header" data-test="header">
+    <div class="header__top header-top">
+      <div class="container">
+        <div class="header-top__inner">
+          <div class="header-top__mail">
+            <p>adv.qwartal@ya.ru</p>
+          </div>
+          <ul class="header-top__block-user list">
+            <li class="header-top__user-item">
+              <button class="header-top__button-searh button">
+                <span class="visually-hidden">Поиск по сайту</span>
+              </button>
+            </li>
+            <li class="header-top__user-item">
+              <button class="header-top__button-registred button">
+                <span class="visually-hidden">регистрация</span>
+              </button>
+            </li>
+
+
+          </ul>
+
+        </div>
+
+      </div>
+    </div>
+    <div class="header__body">
+      <div class="container">
+        <div class="header__wrapper">
+
+          <a class="header__logo logo link" href="#">
+
+            <img width="140px" height="69px" src="images/logo/logo@2x.webp" alt="Логотип компании">
+
+          </a>
+          <button class="header__burger-menu button"></button>
+          <span class="visually-hidden">открыть меню</span>
+          </button>
+          <nav class="header-nav">
+            <ul class="header-nav__list list">
+              <li class="header-nav__item">
+                <a class="header-nav__link link" href="#">Предложения</a>
+              </li>
+              <li class="header-nav__item">
+                <a class="header-nav__link link" href="#">О компании</a>
+              </li>
+              <li class="header-nav__item">
+                <a class="header-nav__link link" href="#">Скидки и акции</a>
+              </li>
+              <li class="header-nav__item">
+                <a class="header-nav__link link" href="#">Новости</a>
+              </li>
+              <li class="header-nav__item">
+                <a class="header-nav__link link" href="#">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+
+        </div>
+      </div>
+    </div>
+
+  </header>
+
+
+  <main class="main-index">
+
+    <!--- ======== HERO ======== --->
+
+    <!-- <section class="hero">
+      <div class="container">
+        <h1 class="hero__title main-title">Вузы РФ</h1>
+        <div class="hero__wrapper">
+          <form class="form-filter" action="" method="post">
+            <ul class="form-filter__list list">
+              <li class="form-filter__item">
+                <fieldset class="form-group">
+                  <legend class="form-group__title form-group__title--select">Выберите город</legend>
+                  <button class="form-group__input form__input--select" id="select-house-level" name="city"
+                    type="button"></button>
+                  <input class="form-group__dropdown-hidden" name="city" type="text" value="">
+                  <ul class="form-group__list-dropdown select-list list" id="select-dropdown-form">
+                    <li class="select-list__item" tabindex="0" data-value="0">&nbsp;</li>
+                    <li class="select-list__item" tabindex="0" data-value="1">Санкт-Петербург</li>
+                    <li class="select-list__item" tabindex="0" data-value="2">Санкт-Петербург</li>
+                    <li class="select-list__item" tabindex="0" data-value="3">Санкт-Петербург</li>
+                    <li class="select-list__item" tabindex="0" data-value="4">Санкт-Петербург</li>
+                  </ul>
+                </fieldset>
+
+
+              </li>
+              <li class="form-filter__item">
+                <fieldset class="form-group">
+                  <legend class="form-group__title form-group__title--select">Выберите город</legend>
+                  <button class="form-group__input form__input--select" id="select-repair" name="city"
+                    type="button"></button>
+                  <input class="form-group__dropdown-hidden" name="city" type="text" value="">
+                  <ul class="form-group__list-dropdown select-list list" id="select-dropdown-form">
+                    <li class="select-list__item" tabindex="0" data-value="0">&nbsp;</li>
+                    <li class="select-list__item" tabindex="0" data-value="1">Санкт-Петербург</li>
+                    <li class="select-list__item" tabindex="0" data-value="2">Санкт-Петербург</li>
+                    <li class="select-list__item" tabindex="0" data-value="3">Санкт-Петербург</li>
+                    <li class="select-list__item" tabindex="0" data-value="4">Санкт-Петербург</li>
+                  </ul>
+                </fieldset>
+
+
+
+              </li>
+              <li class="form-filter__item">
+                <fieldset class="form-group">
+                  <legend class="form-group__title">Год сдачи</legend>
+                  <div class="form-group__range">
+                    <label class="filter-group__range-container">
+                      <input type="number" class="filter-group__range-input" placeholder="от" name="min-price" value=""
+                        min="0" step="100">
+                    </label>
+                    <label class="filter-group__range-container">
+                      <input type="number" class="filter-group__range-input" placeholder="до" name="max-price" value=""
+                        max="20000" step="100">
+                    </label>
+                  </div>
+                </fieldset>
+              </li>
+            </ul>
+            <div class="form-filter__block-submit">
+              <button class="form-filter__submit button" type="submit">Показать</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+    </section> -->
+
+    <!--- ======== PROMO ======== --->
+
+    <!-- <section class="promo">
+      <h2 class="visually-hidden">Наши предложения</h2>
+      <ul class="promo__list">
+        <li class="promo__item">
+          <a class="promo__card-link" href="#">
+            <h3>Выбирайте лучшее</h3>
+            <p>Квартиры в ЖК "Солнечный" от 1 900 000 руб.</p>
+          </a>
+        </li>
+        <li class="promo__item">
+          <a class="promo__card-link" href="#">
+            <h3>Шикарные загородные дома</h3>
+            <p>Дом на берегу средиземного моря, мечта может стать явью.</p>
+          </a>
+        </li>
+        <li class="promo__item">
+          <a class="promo__card-link" href="#">
+            <h3>Предложение дня</h3>
+            <p>Двухкомнатная квартира с шикарным евроремонтом.</p>
+          </a>
+        </li>
+        <li class="promo__item">
+          <a class="promo__card-link" href="#">
+            <h3>Дома в элитном посёлке</h3>
+            <p>Элитная недвижимость в Коттеджном посёлке "Прибыльный"</p>
+          </a>
+        </li>
+      </ul>
+    </section> -->
+
+    <!--- ======== OFFERS ======== --->
+
+    <!-- <section class="offers">
+      <div class="container">
+        <div class="offers__inner">
+          <h2 class="offers__title">Горячие предложения</h2>
+          <ul class="offers__list">
+            <li class="offers__item">
+              <article class="card-offers">
+                <a class="card-offers__link link" href="#">
+                  <img class="card-offers__picture" src="#" alt="Фото ЖК" height="50px" width="50px">
+                  <p class="card-offers__copyright">Источник: freepik.ru</p>
+                  <button class="card-offers__button-show-tel">Показать телефон</button>
+                  <h3>ЖК "iLove"</h3>
+                  <b>ГК "КОРТРОС"</b>
+                  <p>Москва, Останкинский район, ул. Бочкова, 11а Бизнес <span>от 13 487 000</span> </p>
+                </a>
+              </article>
+            </li>
+            <li class="offers__item">
+              <article class="card-offers">
+                <a class="card-offers__link link" href="#">
+                  <img class="card-offers__picture" src="#" alt="Фото ЖК" height="50px" width="50px">
+                  <p class="card-offers__copyright">Источник: freepik.ru</p>
+                  <button class="card-offers__button-show-tel">Показать телефон</button>
+                  <h3>ЖК "iLove"</h3>
+                  <b>ГК "КОРТРОС"</b>
+                  <p>Москва, Останкинский район, ул. Бочкова, 11а Бизнес <span>от 13 487 000</span> </p>
+                </a>
+              </article>
+            </li>
+            <li class="offers__item">
+              <article class="card-offers">
+                <a class="card-offers__link link" href="#">
+                  <img class="card-offers__picture" src="#" alt="Фото ЖК" height="50px" width="50px">
+                  <p class="card-offers__copyright">Источник: freepik.ru</p>
+                  <button class="card-offers__button-show-tel">Показать телефон</button>
+                  <h3>ЖК "iLove"</h3>
+                  <b>ГК "КОРТРОС"</b>
+                  <p>Москва, Останкинский район, ул. Бочкова, 11а Бизнес <span>от 13 487 000</span> </p>
+                </a>
+              </article>
+            </li>
+            <li class="offers__item">
+              <article class="card-offers">
+                <a class="card-offers__link link" href="#">
+                  <img class="card-offers__picture" src="#" alt="Фото ЖК" height="50px" width="50px">
+                  <p class="card-offers__copyright">Источник: freepik.ru</p>
+                  <button class="card-offers__button-show-tel">Показать телефон</button>
+                  <h3>ЖК "iLove"</h3>
+                  <b>ГК "КОРТРОС"</b>
+                  <p>Москва, Останкинский район, ул. Бочкова, 11а Бизнес <span>от 13 487 000</span> </p>
+                </a>
+              </article>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section> -->
+
+    <!--- ======== INFO ======== --->
+
+    <!-- <section class="info">
+      <div class="container">
+        <div class="info__inner">
+          <h2 class="info__title">Рубрика о недвижимости</h2>
+          <ul class="info__list">
+            <li class="info__title">
+              <article class="card-info">
+                <a class="card-info__picture link" href="#">
+                  <img src="#" alt="Картинка" width="50" height="50">
+                </a>
+                <a class="card-info__link-text" href="#">
+                  <p>«Волк в овечьей шкуре» или в чем подвох заниженной цены апартаментов?</p>
+                </a>
+                <a class="card-info__link-more" href="#"></a>
+              </article>
+            </li>
+            <li class="info__title">
+              <article class="card-info">
+                <a class="card-info__picture link" href="#">
+                  <img src="#" alt="Картинка" width="50" height="50">
+                </a>
+                <a class="card-info__link-text" href="#">
+                  <p>Креативная реклама от застройщиков, мимо которой невозможно пройти</p>
+                </a>
+                <a class="card-info__link-more" href="#"></a>
+              </article>
+            </li>
+            <li class="info__title">
+              <article class="card-info">
+                <a class="card-info__picture link" href="#">
+                  <img src="#" alt="Картинка" width="50" height="50">
+                </a>
+                <a class="card-info__link-text" href="#">
+                  <p>Флиппинг: стоит ли вкладываться в перепродажу недвижимости сегодня?</p>
+                </a>
+                <a class="card-info__link-more" href="#"></a>
+              </article>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section> -->
+
+    <!--- ======== ADVANTAGES ======== --->
+
+    <!-- <section class="advantages">
+      <h2 class="advantages__title title">Все новостройки</h2>
+      <div class="advantages__slider-navigation slider-navigation">
+        <button
+          class="advantages__button-slider advantages__button-slider--prev slider-navigation__button slider-navigation__button--prev"
+          type="button">
+          <span class="visually-hidden">Кнопка: листать слайдер влево</span>
+        </button>
+        <button
+          class="advantages__button-slider advantages__button-slider--next slider-navigation__button slider-navigation__button--next"
+          type="button">
+          <span class="visually-hidden">Кнопка: листать слайдер вправо</span>
+        </button>
+
+      </div>
+      <div class="advantages__inner">
+        <div class="container">
+          <div class="advantages__slider-container swiper">
+            <ul class="advantages__list swiper-wrapper list">
+              <li class="advantages__item swiper-slide">
+                <article class="card-advantages">
+                  <a href="#" class="card-advantages__link-image link">
+                    <img src="" alt="Фото">
+                  </a>
+                  <div class="card-advantages__block-favorit">
+                    <span class="card-advantages__heart"></span>
+                    <span class="card-advantages__star"></span>
+                  </div>
+                  <div class="card-advantages__block-body">
+                    <h3 class="card-advantages__title">ЖК "Квартал Авиаторов"</h3>
+                    <div class="card-advantages__etage">17 этаж</div>
+                    <p>Подмосковье, Балашиха, Балашихинское ш</p>
+                    <div class="card-advantages__price">от 4 518 000</div>
+                  </div>
+                  <a data-href="tel:+77777777777" data-phone="+77777777777" class="card-advantages__phone link"
+                    tabindex="0">Показать телефон</a>
+                </article>
+              </li>
+              <li class="advantages__item swiper-slide">
+                <article class="card-advantages">
+                  <a href="#" class="card-advantages__link-image link">
+                    <img src="" alt="Фото">
+                  </a>
+                  <div class="card-advantages__block-favorit">
+                    <span class="card-advantages__heart"></span>
+                    <span class="card-advantages__star"></span>
+                  </div>
+                  <div class="card-advantages__block-body">
+                    <h3 class="card-advantages__title">ЖК "Квартал Авиаторов"</h3>
+                    <div class="card-advantages__etage">17 этаж</div>
+                    <p>Подмосковье, Балашиха, Балашихинское ш</p>
+                    <div class="card-advantages__price">от 4 518 000</div>
+                  </div>
+                  <a data-href="tel:+77777777777" data-phone="+77777777777" class="card-advantages__phone link"
+                    tabindex="0">Показать телефон</a>
+                </article>
+              </li>
+              <li class="advantages__item swiper-slide">
+                <article class="card-advantages">
+                  <a href="#" class="card-advantages__link-image link">
+                    <img src="" alt="Фото">
+                  </a>
+                  <div class="card-advantages__block-favorit">
+                    <span class="card-advantages__heart"></span>
+                    <span class="card-advantages__star"></span>
+                  </div>
+                  <div class="card-advantages__block-body">
+                    <h3 class="card-advantages__title">ЖК "Квартал Авиаторов"</h3>
+                    <div class="card-advantages__etage">17 этаж</div>
+                    <p>Подмосковье, Балашиха, Балашихинское ш</p>
+                    <div class="card-advantages__price">от 4 518 000</div>
+                  </div>
+                  <a data-href="tel:+77777777777" data-phone="+77777777777" class="card-advantages__phone link"
+                    tabindex="0">Показать телефон</a>
+                </article>
+              </li>
+              <li class="advantages__item swiper-slide">
+                <article class="card-advantages">
+                  <a href="#" class="card-advantages__link-image link">
+                    <img src="" alt="Фото">
+                  </a>
+                  <div class="card-advantages__block-favorit">
+                    <span class="card-advantages__heart"></span>
+                    <span class="card-advantages__star"></span>
+                  </div>
+                  <div class="card-advantages__block-body">
+                    <h3 class="card-advantages__title">ЖК "Квартал Авиаторов"</h3>
+                    <div class="card-advantages__etage">17 этаж</div>
+                    <p>Подмосковье, Балашиха, Балашихинское ш</p>
+                    <div class="card-advantages__price">от 4 518 000</div>
+                  </div>
+                  <a data-href="tel:+77777777777" data-phone="+77777777777" class="card-advantages__phone link"
+                    tabindex="0">Показать телефон</a>
+                </article>
+              </li>
+              <li class="advantages__item swiper-slide">
+                <article class="card-advantages">
+                  <a href="#" class="card-advantages__link-image link">
+                    <img src="" alt="Фото">
+                  </a>
+                  <div class="card-advantages__block-favorit">
+                    <span class="card-advantages__heart"></span>
+                    <span class="card-advantages__star"></span>
+                  </div>
+                  <div class="card-advantages__block-body">
+                    <h3 class="card-advantages__title">ЖК "Квартал Авиаторов"</h3>
+                    <div class="card-advantages__etage">17 этаж</div>
+                    <p>Подмосковье, Балашиха, Балашихинское ш</p>
+                    <div class="card-advantages__price">от 4 518 000</div>
+                  </div>
+                  <a data-href="tel:+77777777777" data-phone="+77777777777" class="card-advantages__phone link"
+                    tabindex="0">Показать телефон</a>
+                </article>
+              </li>
+              <li class="advantages__item swiper-slide">
+                <article class="card-advantages">
+                  <a href="#" class="card-advantages__link-image link">
+                    <img src="" alt="Фото">
+                  </a>
+                  <div class="card-advantages__block-favorit">
+                    <span class="card-advantages__heart"></span>
+                    <span class="card-advantages__star"></span>
+                  </div>
+                  <div class="card-advantages__block-body">
+                    <h3 class="card-advantages__title">ЖК "Квартал Авиаторов"</h3>
+                    <div class="card-advantages__etage">17 этаж</div>
+                    <p>Подмосковье, Балашиха, Балашихинское ш</p>
+                    <div class="card-advantages__price">от 4 518 000</div>
+                  </div>
+                  <a data-href="tel:+77777777777" data-phone="+77777777777" class="card-advantages__phone link"
+                    tabindex="0">Показать телефон</a>
+                </article>
+              </li>
+              <li class="advantages__item swiper-slide">
+                <article class="card-advantages">
+                  <a href="#" class="card-advantages__link-image link">
+                    <img src="" alt="Фото">
+                  </a>
+                  <div class="card-advantages__block-favorit">
+                    <span class="card-advantages__heart"></span>
+                    <span class="card-advantages__star"></span>
+                  </div>
+                  <div class="card-advantages__block-body">
+                    <h3 class="card-advantages__title">ЖК "Квартал Авиаторов"</h3>
+                    <div class="card-advantages__etage">17 этаж</div>
+                    <p>Подмосковье, Балашиха, Балашихинское ш</p>
+                    <div class="card-advantages__price">от 4 518 000</div>
+                  </div>
+                  <a data-href="tel:+77777777777" data-phone="+77777777777" class="card-advantages__phone link"
+                    tabindex="0">Показать телефон</a>
+                </article>
+              </li>
+              <li class="advantages__item swiper-slide">
+                <article class="card-advantages">
+                  <a href="#" class="card-advantages__link-image link">
+                    <img src="" alt="Фото">
+                  </a>
+                  <div class="card-advantages__block-favorit">
+                    <span class="card-advantages__heart"></span>
+                    <span class="card-advantages__star"></span>
+                  </div>
+                  <div class="card-advantages__block-body">
+                    <h3 class="card-advantages__title">ЖК "Квартал Авиаторов"</h3>
+                    <div class="card-advantages__etage">17 этаж</div>
+                    <p>Подмосковье, Балашиха, Балашихинское ш</p>
+                    <div class="card-advantages__price">от 4 518 000</div>
+                  </div>
+                  <a data-href="tel:+77777777777" data-phone="+77777777777" class="card-advantages__phone link"
+                    tabindex="0">Показать телефон</a>
+                </article>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section> -->
+
+    <!--- ======== PARTNERS ======== --->
+
+    <!-- <section class="partners">
+      <div class="container">
+        <div class="partners__inner">
+          <h2 class="partners__title">ТОП Застройщиков</h2>
+          <ul class="partners__list">
+            <li class="partners__item">
+              <article class="card-partner">
+                <a class="card-partner__image-link link" href="#"><img src="#" alt="Изображение логотипа партнеров"
+                    height="50" width="50">
+                </a>
+                <h3 class="card-partner__title">ФСК</h3>
+                <p>Застройщик Москвы
+                  Год основания 2005
+                  Построил 18 новостроек</p>
+                <a class="card-partner__link-more link" href="#">Подробнее</a>
+              </article>
+            </li>
+            <li class="partners__item">
+              <article class="card-partner">
+                <a class="card-partner__image-link link" href="#"><img src="#" alt="Изображение логотипа партнеров"
+                    height="50" width="50">
+                </a>
+                <h3 class="card-partner__title">Эталон</h3>
+                <p>Застройщик Москвы
+                  Год основания 1987
+                  Построил 23 новостройки
+                </p>
+                <a class="card-partner__link-more link" href="#">Подробнее</a>
+              </article>
+            </li>
+            <li class="partners__item">
+              <article class="card-partner">
+                <a class="card-partner__image-link link" href="#"><img src="#" alt="Изображение логотипа партнеров"
+                    height="50" width="50">
+                </a>
+                <h3 class="card-partner__title">MR Group</h3>
+                <p>Застройщик Москвы
+                  Год основания 2003
+                  Построил 19 новостроек</p>
+                <a class="card-partner__link-more link" href="#">Подробнее</a>
+              </article>
+            </li>
+            <li class="partners__item">
+              <article class="card-partner">
+                <a class="card-partner__image-link link" href="#"><img src="#" alt="Изображение логотипа партнеров"
+                    height="50" width="50">
+                </a>
+                <h3 class="card-partner__title">Донстрой</h3>
+                <p>Застройщик Москвы
+                  Год основания 1994
+                  Построил 16 новостроек</p>
+                <a class="card-partner__link-more link" href="#">Подробнее</a>
+              </article>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section> -->
+
+    <!--- ======== NEWS ======== --->
+
+    <!-- <section class="news">
+      <div class="container">
+        <div class="news__inner">
+          <h2 class="news__title title">Свежие новости</h2>
+          <ul class="news__list">
+            <li class="news__item">
+              <article class="card-news">
+                <a class="card-news__link" href="#">
+                  <div class="card-news__date">
+                    <p>
+                      <b></b>
+                      сегодня
+                    </p>
+                  </div>
+                  <div class="card-news__body">
+                    <h3>Суд вынес запрет на доп. услуги в квитанциях</h3>
+                    <p>Жительница Санкт-Петербурга 3 года оплачивала кабельное телевидение</p>
+                  </div>
+                </a>
+              </article>
+            </li>
+            <li class="news__item">
+              <article class="card-news">
+                <a class="card-news__link" href="#">
+                  <div class="card-news__date">
+                    <p>
+                      <b>20</b>
+                      сентября
+                    </p>
+                  </div>
+                  <div class="card-news__body">
+                    <h3>Обмотали деревья лентой и повесили на них иконы</h3>
+                    <p>Противостояние местных жителей и рабочих в масках.</p>
+                  </div>
+                </a>
+              </article>
+            </li>
+            <li class="news__item">
+              <article class="card-news">
+                <a class="card-news__link" href="#">
+                  <div class="card-news__date">
+                    <p>
+                      <b>9</b>
+                      сентября
+                    </p>
+                  </div>
+                  <div class="card-news__body">
+                    <h3>Девушки обнаружили скрытые камеры в съёмной квартире.</h3>
+                    <p>Устройства были установлены в том числе в ванной комнате.</p>
+                  </div>
+                </a>
+              </article>
+            </li>
+            <li class="news__item">
+              <article class="card-news">
+                <a class="card-news__link" href="#">
+                  <div class="card-news__date">
+                    <p>
+                      <b>8</b>
+                      сентября
+                    </p>
+                  </div>
+                  <div class="card-news__body">
+                    <h3>Оргия в ЖК от ПИК</h3>
+                    <p>Всё как в немецком кино. Мужчина сантехник, а женщины, из управляющей компании.</p>
+                  </div>
+                </a>
+              </article>
+            </li>
+            <li class="news__item">
+              <article class="card-news">
+                <a class="card-news__link" href="#">
+                  <div class="card-news__date">
+                    <p>
+                      <b>7</b>
+                      сентября
+                    </p>
+                  </div>
+                  <div class="card-news__body">
+                    <h3>Помещения на минимальных уровнях</h3>
+                    <p>В Москве в сократились предложение по аренде торговых площадей.</p>
+                  </div>
+                </a>
+              </article>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section> -->
+
+    <!--- ======== FEEDBACK ======== --->
+
+    <!-- <section class="feedback">
+      <div class="container">
+        <div class="feedback__inner">
+          <h2 class="feedback__title title">Бесплатная консультация</h2>
+          <p class="feedback__legend">Мы даем бесплатную консультацию по любому интересующему вас вопросу. Оставьте ваш
+            контакт и наш специалист перезвонит в ближайшее время и ответит на все интересующие вопросы.</p>
+          <form class="form-feedback" action="#" method="post">
+            <div class="form-feedback__field">
+              <label class="form-feedback__label" for="name-user">Введите имя</label>
+              <input class="form-feedback__input" type="text" id="name-user" placeholder="Введите ваше имя" required>
+            </div>
+            <div class="form-feedback__field">
+              <label class="form-feedback__label" for="phone-user">Укажите ваш телефон</label>
+              <input class="form-feedback__input" type="text" id="phone-user" placeholder="+7 (999) 999-99-99"
+                pattern="^(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){10,14}(\s*)?$" required>
+            </div>
+            <div class="form-feedback__field form-feedback__field--check">
+              <label class="form-feedback__label-check" for="user-check">Согласен с условиями передачи персональных
+                данных</label>
+              <input type="checkbox" id="user-check" checked required>
+            </div>
+            <button class="form-feedback__button-submit button">Отправить</button>
+          </form>
+        </div>
+      </div>
+    </section> -->
+
+  </main>
+
+  <!--- ======== FOOTER ======== --->
+
+  <!-- <footer class="footer" data-test="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="contacts">
+
+          <div class="contacts__block-info">
+            <picture>
+              <img class="logo" width="50px" height="50px" src="#" alt="Логотип компании">
+            </picture>
+            <p class="contacts__copyright">2024© Портал недвижимости</p>
+          </div>
+          <div class="contacts__block-links">
+            <p class="visually-hidden">Наши контакты</p>
+            <a href="mailto:vuz-rf.ru@yandex.ru">vuz-rf.ru@yandex.ru</a>
+            <a href="https://t.me/qwartal_partner">Партнерская группа в Telegram </a>
+          </div>
+
+        </div>
+        <div class="footer-content">
+          <p class="visually-hidden">Основные типы жилья</p>
+          <ul class="footer-content__list footer-content__list--type-housing list">
+            <li class="footer-content__item">
+              <a class="footer-content__link link" href="#">Новостройки</a>
+            </li>
+            <li class="footer-content__item">
+              <a class="footer-content__link link" href="#">Коммерческая</a>
+            </li>
+          </ul>
+          <p class="visually-hidden">Выбор жилья по городам</p>
+          <ul class="footer-content__list footer-content__list--city list">
+            <li class="footer-content__item">
+              <a class="footer-content__link link" href="#">Москва</a>
+            </li>
+            <li class="footer-content__item">
+              <a class="footer-content__link link" href="#">Санкт-Петербург</a>
+            </li>
+            <li class="footer-content__item">
+              <a class="footer-content__link link" href="#">Екатеринбург</a>
+            </li>
+            <li class="footer-content__item">
+              <a class="footer-content__link link" href="#">Нижний Новгород</a>
+            </li>
+            <li class="footer-content__item">
+              <a class="footer-content__link link" href="#">Самара</a>
+            </li>
+            <li class="footer-content__item">
+              <a class="footer-content__link link" href="#">Казань</a>
+            </li>
+            <li class="footer-content__item">
+              <a class="footer-content__link link" href="#">Краснодар</a>
+            </li>
+          </ul>
+          <a class="footer-content__privacy" href="#">Политика конфиденциальности</a>
+        </div>
+        <div class="social">
+          <p class="visually-hidden">Наши соцсети</p>
+          <ul class="social__list list">
+            <li class="social__item">
+              <a class="social__link social__link--vk link" href="#">
+                <span class="visually-hidden">В контакте</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--telegram link" href="#">
+                <span class="visually-hidden">Телеграм</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__captcha">
+          This site is protected by reCAPTCHA and the <a class="footer__captcha-link" href="#">Privacy Policy</a> and <a
+            class="footer__captcha-link" href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer> -->
+  <script src="scripts/main.js" defer></script>
+</body>
+
 </html>

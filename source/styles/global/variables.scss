@@ -1,1 +1,21 @@
 /* здесь используйте глобальные переменные */
+
+/* Colors */
+$color-white: #ffffff;
+$color-title: #212529;
+$color-text:  #343a40;
+$bottom-color: #eb8a22;
+$footer-color: linear-gradient(-105deg, #302f2f 50%, #cfd3d8 50%);
+$dark-overlay: #373737;
+$coloe-border: #dee2e6;
+
+
+/* Fonts */
+$primary-font: "Verdana", "Arial", sans-serif;
+
+/* Veiwport */
+$mobile-plus-width: 576px;
+$tablet-width: 768px;
+$tablet-plus-width: 992px;
+$desktop-width: 1200px;
+$mobile-width-only: 767px;

@@ -1,0 +1,94 @@
+// ---------HEADER-TOP--------//
+
+
+.header-top {
+  background-color: #343a40;
+  color: $color-white;
+}
+
+.header-top__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-top__mail {
+  display: flex;
+  flex-shrink: 2;
+}
+
+.header-top__block-user {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-shrink: 0;
+  gap: 1.5rem;
+}
+
+.header-top__user-item {
+  display: flex;
+}
+
+.header-top__button-searh {
+  position: relative;
+  width: 16px;
+  height: 16px;
+  background-color: transparent;
+  color: $color-white;
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.header-top__button-searh::after {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: currentColor;
+  mask-image: url("../../images/icons/icon-searh.svg");
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: cover;
+}
+
+.header-top__button-registred {
+  position: relative;
+  width: 16px;
+  height: 16px;
+  background-color: transparent;
+  color: $color-white;
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.header-top__button-registred::after {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: currentColor;
+  mask-image: url("../../images/icons/user-icon.svg");
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: cover;
+}
