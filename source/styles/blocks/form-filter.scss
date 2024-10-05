@@ -1,0 +1,29 @@
+.form-filter {
+}
+
+.form-filter__list {
+}
+
+.form-filter__item {
+}
+
+.form-filter__block-submit {
+}
+
+.form-filter__submit {
+  border-radius: 20px;
+  font-size: 12px;
+  padding: 4px 8px;
+  line-height: 1.5;
+  border: 1px solid transparent;
+  background-color: $bottom-color;
+  color: $color-white;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+
+  &:hover,
+  &:focus-visible {
+    border-color: $bottom-color;
+    color: $bottom-color;
+    background-color: $color-white;
+  }
+}
