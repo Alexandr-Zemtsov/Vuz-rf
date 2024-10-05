@@ -84,7 +84,7 @@
   right: 0;
   transition: all 0.3s linear;
   background-color: currentColor;
-  mask-image: url("../../images/icons/burger-menu-close.svg");
+  mask-image: url("../../images/icons/stack.svg#burger-menu-close");
   mask-repeat: no-repeat;
   mask-position: center;
   mask-size: cover;
@@ -92,7 +92,7 @@
 
 .header__burger-menu--open::before {
   background-color: currentColor;
-  mask-image: url("../../images/icons/burger-menu-open.svg");
+  mask-image: url("../../images/icons/stack.svg#burger-menu-open");
   mask-repeat: no-repeat;
   mask-position: center;
   mask-size: cover;
