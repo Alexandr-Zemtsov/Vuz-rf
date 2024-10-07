@@ -1,0 +1,1 @@
+var e=document.querySelector(".header__burger-menu"),r=document.querySelector(".header-nav"),n=()=>{e.addEventListener("click",()=>{e.classList.toggle("header__burger-menu--open"),r.classList.toggle("header-nav--open")})};export{n as makeBurgerMenu};
