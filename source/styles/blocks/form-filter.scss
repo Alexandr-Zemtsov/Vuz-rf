@@ -1,13 +1,34 @@
 .form-filter {
+  display: grid;
+  row-gap: 10px;
+
+  @media (min-width: $tablet-width) {
+    row-gap: 15px;
+  }
 }
 
 .form-filter__list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+  }
 }
 
 .form-filter__item {
 }
 
 .form-filter__block-submit {
+  display: flex;
+  justify-content: center;
+
+  @media (min-width: $tablet-width) {
+    justify-content: end;
+  }
 }
 
 .form-filter__submit {

@@ -1,0 +1,38 @@
+.select-list {
+  border-radius: 15px;
+  width: 100%;
+  background: $color-white;
+  overflow-y: auto;
+  max-height: 200px;
+  scrollbar-width: thin;
+  border: 1px solid #dadada;
+  box-shadow: 0 4px 8px rgba(176, 198, 225, 0.6);
+  cursor: pointer;
+}
+
+.select-list__item {
+  padding: 8px 18px;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 21px;
+  color: $color-text;
+  background-color: transparent;
+
+  &:hover,
+  &:focus-visible {
+    color: $color-white;
+    background-color: $color-blue;
+  }
+
+  &:active {
+    opacity: 0.8;
+  }
+}
+
+.select-list__item:first-child {
+  border-radius: 8px 8px 0 0;
+}
+
+.select-list__item:last-child {
+  border-radius: 0 0 8px 8px;
+}

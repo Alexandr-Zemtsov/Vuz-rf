@@ -48,12 +48,11 @@
 
           <a class="header__logo logo link" href="#">
 
-            <img width="140px" height="69px" src="images/logo/logo@2x.webp" alt="Логотип компании">
+            <img width="140" height="69" src="images/logo/logo@2x.webp" alt="Логотип компании">
 
           </a>
           <button class="header__burger-menu button"></button>
           <span class="visually-hidden">открыть меню</span>
-          </button>
           <nav class="header-nav">
             <ul class="header-nav__list list">
               <li class="header-nav__item">
@@ -83,43 +82,44 @@
 
   <main class="main-index">
 
-    <!--- ======== HERO ======== --->
+    <!-- ======== HERO ======== -->
 
     <section class="hero">
       <div class="container">
-        <h1 class="hero__title">Вузы РФ</h1>
+
         <div class="hero__wrapper">
+          <h1 class="hero__title">Вузы РФ</h1>
           <form class="form-filter" action="" method="post">
             <ul class="form-filter__list list">
               <li class="form-filter__item">
-                <fieldset class="form-group">
-                  <legend class="form-group__title form-group__title--select">Выберите город</legend>
-                  <button class="form-group__input form__input--select" id="select-house-level" name="city"
-                    type="button"></button>
-                  <input class="form-group__dropdown-hidden" name="city" type="text" value="">
-                  <ul class="form-group__list-dropdown select-list list" id="select-dropdown-form">
-                    <li class="select-list__item" tabindex="0" data-value="0">&nbsp;</li>
+                <fieldset class="filter-group">
+                  <legend class="filter-group__title filter-group__title--select">Выберите город</legend>
+                  <button class="filter-group__input filter-group__input--select" id="select-house-level" name="city"
+                    type="button">Выберите город</button>
+                  <input class="filter-group__dropdown-hidden" name="city" type="text" value="">
+                  <ul class="filter-group__list-dropdown select-list list" id="select-city">
+                    <li class="select-list__item" tabindex="0" data-value="0">Москва</li>
                     <li class="select-list__item" tabindex="0" data-value="1">Санкт-Петербург</li>
-                    <li class="select-list__item" tabindex="0" data-value="2">Санкт-Петербург</li>
-                    <li class="select-list__item" tabindex="0" data-value="3">Санкт-Петербург</li>
-                    <li class="select-list__item" tabindex="0" data-value="4">Санкт-Петербург</li>
+                    <li class="select-list__item" tabindex="0" data-value="2">Казань</li>
+                    <li class="select-list__item" tabindex="0" data-value="3">Самара</li>
+                    <li class="select-list__item" tabindex="0" data-value="4">Саратов</li>
                   </ul>
                 </fieldset>
 
 
               </li>
               <li class="form-filter__item">
-                <fieldset class="form-group">
-                  <legend class="form-group__title form-group__title--select">Выберите город</legend>
-                  <button class="form-group__input form__input--select" id="select-repair" name="city"
-                    type="button"></button>
-                  <input class="form-group__dropdown-hidden" name="city" type="text" value="">
-                  <ul class="form-group__list-dropdown select-list list" id="select-dropdown-form">
-                    <li class="select-list__item" tabindex="0" data-value="0">&nbsp;</li>
+                <fieldset class="filter-group">
+                  <legend class="filter-group__title filter-group__title--select">Выберите город</legend>
+                  <button class="filter-group__input filter-group__input--select" id="select-repair" name="city"
+                    type="button">Выберите город</button>
+                  <input class="filter-group__dropdown-hidden" name="city" type="text" value="">
+                  <ul class="filter-group__list-dropdown select-list list" id="select-level">
+                    <li class="select-list__item" tabindex="0" data-value="0">Москва</li>
                     <li class="select-list__item" tabindex="0" data-value="1">Санкт-Петербург</li>
-                    <li class="select-list__item" tabindex="0" data-value="2">Санкт-Петербург</li>
-                    <li class="select-list__item" tabindex="0" data-value="3">Санкт-Петербург</li>
-                    <li class="select-list__item" tabindex="0" data-value="4">Санкт-Петербург</li>
+                    <li class="select-list__item" tabindex="0" data-value="2">Казань</li>
+                    <li class="select-list__item" tabindex="0" data-value="3">Самара</li>
+                    <li class="select-list__item" tabindex="0" data-value="4">Саратов</li>
                   </ul>
                 </fieldset>
 
@@ -127,9 +127,9 @@
 
               </li>
               <li class="form-filter__item">
-                <fieldset class="form-group">
-                  <legend class="form-group__title">Год сдачи</legend>
-                  <div class="form-group__range">
+                <fieldset class="filter-group">
+                  <legend class="filter-group__title">Год сдачи</legend>
+                  <div class="filter-group__range">
                     <label class="filter-group__range-container">
                       <input type="number" class="filter-group__range-input" placeholder="от" name="min-price" value=""
                         min="0" step="100">
@@ -151,9 +151,9 @@
 
     </section>
 
-    <!--- ======== PROMO ======== --->
+    <!-- ======== PROMO ======== -->
 
-    <!-- <section class="promo">
+    <section class="promo">
       <h2 class="visually-hidden">Наши предложения</h2>
       <ul class="promo__list">
         <li class="promo__item">
@@ -181,11 +181,11 @@
           </a>
         </li>
       </ul>
-    </section> -->
+    </section>
 
-    <!--- ======== OFFERS ======== --->
+    <!-- ======== OFFERS ======== -->
 
-    <!-- <section class="offers">
+    <section class="offers">
       <div class="container">
         <div class="offers__inner">
           <h2 class="offers__title">Горячие предложения</h2>
@@ -241,11 +241,11 @@
           </ul>
         </div>
       </div>
-    </section> -->
+    </section>
 
     <!--- ======== INFO ======== --->
 
-    <!-- <section class="info">
+    <section class="info">
       <div class="container">
         <div class="info__inner">
           <h2 class="info__title">Рубрика о недвижимости</h2>
@@ -286,11 +286,11 @@
           </ul>
         </div>
       </div>
-    </section> -->
+    </section>
 
     <!--- ======== ADVANTAGES ======== --->
 
-    <!-- <section class="advantages">
+    <section class="advantages">
       <h2 class="advantages__title title">Все новостройки</h2>
       <div class="advantages__slider-navigation slider-navigation">
         <button
@@ -466,11 +466,11 @@
 
         </div>
       </div>
-    </section> -->
+    </section>
 
     <!--- ======== PARTNERS ======== --->
 
-    <!-- <section class="partners">
+    <section class="partners">
       <div class="container">
         <div class="partners__inner">
           <h2 class="partners__title">ТОП Застройщиков</h2>
@@ -527,11 +527,11 @@
           </ul>
         </div>
       </div>
-    </section> -->
+    </section>
 
     <!--- ======== NEWS ======== --->
 
-    <!-- <section class="news">
+    <section class="news">
       <div class="container">
         <div class="news__inner">
           <h2 class="news__title title">Свежие новости</h2>
@@ -619,11 +619,11 @@
           </ul>
         </div>
       </div>
-    </section> -->
+    </section>
 
     <!--- ======== FEEDBACK ======== --->
 
-    <!-- <section class="feedback">
+    <section class="feedback">
       <div class="container">
         <div class="feedback__inner">
           <h2 class="feedback__title title">Бесплатная консультация</h2>
@@ -648,13 +648,13 @@
           </form>
         </div>
       </div>
-    </section> -->
+    </section>
 
   </main>
 
   <!--- ======== FOOTER ======== --->
 
-  <!-- <footer class="footer" data-test="footer">
+  <footer class="footer" data-test="footer">
     <div class="container">
       <div class="footer__inner">
         <div class="contacts">
@@ -729,8 +729,8 @@
         </div>
       </div>
     </div>
-  </footer> -->
-  <script src="scripts/main.js" defer></script>
+  </footer>
+  <script src="scripts/main.js" type="module"></script>
 </body>
 
 </html>
