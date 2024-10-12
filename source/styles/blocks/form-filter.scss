@@ -2,8 +2,12 @@
   display: grid;
   row-gap: 10px;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $mobile-plus-width) {
     row-gap: 15px;
+  }
+
+  @media (min-width: $tablet-width) {
+    row-gap: 20px;
   }
 }
 
@@ -12,6 +16,11 @@
   flex-direction: column;
   gap: 10px;
 
+  @media (min-width: $mobile-plus-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -19,8 +28,8 @@
   }
 }
 
-.form-filter__item {
-}
+// .form-filter__item {
+// }
 
 .form-filter__block-submit {
   display: flex;
@@ -46,5 +55,9 @@
     border-color: $bottom-color;
     color: $bottom-color;
     background-color: $color-white;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
   }
 }
