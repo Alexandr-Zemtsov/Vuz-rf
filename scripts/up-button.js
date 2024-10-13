@@ -1,0 +1,1 @@
+var o=document.querySelector(".up-button");window.addEventListener("scroll",()=>{window.scrollY>150?o.classList.add("up-button--shown"):o.classList.remove("up-button--shown")});o.addEventListener("click",()=>{window.scrollTo(0,0)});
