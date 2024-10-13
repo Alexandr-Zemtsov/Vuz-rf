@@ -56,7 +56,7 @@
           <nav class="header-nav">
             <ul class="header-nav__list list">
               <li class="header-nav__item">
-                <a class="header-nav__link link" href="#">Предложения!</a>
+                <a class="header-nav__link link" href="#">Предложения</a>
               </li>
               <li class="header-nav__item">
                 <a class="header-nav__link link" href="#">О компании</a>
@@ -136,14 +136,14 @@
                     </label>
                     <label class="filter-group__range-container">
                       <input class="filter-group__range-input" type="number" placeholder="До" name="max-price" value=""
-                      max="2036">
+                        max="2036">
                     </label>
                   </div>
                 </fieldset>
               </li>
             </ul>
             <div class="form-filter__block-submit">
-              <button class="form-filter__submit button" type="submit">Показать</button>
+              <button class="form-filter__submit button-global-style  button" type="submit">Показать</button>
             </div>
           </form>
         </div>
@@ -159,7 +159,7 @@
         <li class="promo__item">
           <a class="promo__card-link promo__card-link--promo-1 link" href="#">
             <h3>Выбирайте лучшее</h3>
-            <p>Квартиры в ЖК "Солнечный" от 1 900 000 руб.</p>
+            <p>Квартиры в ЖК "Солнечный" от 1&nbsp;900&nbsp;000 руб.</p>
           </a>
         </li>
         <li class="promo__item">
@@ -188,54 +188,83 @@
     <section class="offers">
       <div class="container">
         <div class="offers__inner">
-          <h2 class="offers__title">Горячие предложения</h2>
-          <ul class="offers__list">
+          <h2 class="offers__title title">
+            <a class="title__link link" href="#">Горячие предложения</a>
+          </h2>
+          <ul class="offers__list list">
             <li class="offers__item">
               <article class="card-offers">
                 <a class="card-offers__link link" href="#">
-                  <img class="card-offers__picture" src="#" alt="Фото ЖК" height="50px" width="50px">
-                  <p class="card-offers__copyright">Источник: freepik.ru</p>
-                  <button class="card-offers__button-show-tel">Показать телефон</button>
-                  <h3>ЖК "iLove"</h3>
-                  <b>ГК "КОРТРОС"</b>
-                  <p>Москва, Останкинский район, ул. Бочкова, 11а Бизнес <span>от 13 487 000</span> </p>
+                  <div class="card-offers__image">
+                    <img src="images/offers/offer-1.webp" alt="Фото ЖК" height="230" width="280">
+                  </div>
+
+                  <div class="card-offers__content">
+                    <p class="card-offers__copyright">Источник: freepik.ru</p>
+                    <h3>ЖК "iLove"</h3>
+                    <b>ГК "КОРТРОС"</b>
+                    <p>Москва, Останкинский район, ул. Бочкова, 11а <span>Бизнес</span> <span
+                        class="card-offers__price">от 13 487 000</span> </p>
+                  </div>
+
                 </a>
+                <button class="card-offers__button-show-tel button-global-style button">Показать телефон</button>
               </article>
             </li>
             <li class="offers__item">
               <article class="card-offers">
                 <a class="card-offers__link link" href="#">
-                  <img class="card-offers__picture" src="#" alt="Фото ЖК" height="50px" width="50px">
-                  <p class="card-offers__copyright">Источник: freepik.ru</p>
-                  <button class="card-offers__button-show-tel">Показать телефон</button>
-                  <h3>ЖК "iLove"</h3>
-                  <b>ГК "КОРТРОС"</b>
-                  <p>Москва, Останкинский район, ул. Бочкова, 11а Бизнес <span>от 13 487 000</span> </p>
+                  <div class="card-offers__image">
+                    <img src="images/offers/offer-2.webp" alt="Фото ЖК" height="230" width="280">
+                  </div>
+                  <div class="card-offers__content">
+                    <p class="card-offers__copyright">Источник: freepik.ru</p>
+
+                    <h3>ЖК "iLove"</h3>
+                    <b>ГК "КОРТРОС"</b>
+                    <p>Москва, Останкинский район, ул. Бочкова, 11а <span>Бизнес</span> <span
+                        class="card-offers__price">от 13 487 000</span></p>
+                  </div>
+
                 </a>
+                <button class="card-offers__button-show-tel button-global-style button">Показать телефон</button>
               </article>
             </li>
             <li class="offers__item">
               <article class="card-offers">
                 <a class="card-offers__link link" href="#">
-                  <img class="card-offers__picture" src="#" alt="Фото ЖК" height="50px" width="50px">
-                  <p class="card-offers__copyright">Источник: freepik.ru</p>
-                  <button class="card-offers__button-show-tel">Показать телефон</button>
-                  <h3>ЖК "iLove"</h3>
-                  <b>ГК "КОРТРОС"</b>
-                  <p>Москва, Останкинский район, ул. Бочкова, 11а Бизнес <span>от 13 487 000</span> </p>
+                  <div class="card-offers__image">
+                    <img src="images/offers/offer-3.webp" alt="Фото ЖК" height="230" width="280">
+                  </div>
+                  <div class="card-offers__content">
+                    <p class="card-offers__copyright">Источник: freepik.ru</p>
+                    <h3>ЖК "iLove"</h3>
+                    <b>ГК "КОРТРОС"</b>
+                    <p>Москва, Останкинский район, ул. Бочкова, 11а <span>Бизнес</span> <span
+                        class="card-offers__price">от 13 487 000</span> </p>
+                  </div>
+
                 </a>
+                <button class="card-offers__button-show-tel button-global-style button">Показать телефон</button>
               </article>
             </li>
             <li class="offers__item">
               <article class="card-offers">
                 <a class="card-offers__link link" href="#">
-                  <img class="card-offers__picture" src="#" alt="Фото ЖК" height="50px" width="50px">
-                  <p class="card-offers__copyright">Источник: freepik.ru</p>
-                  <button class="card-offers__button-show-tel">Показать телефон</button>
-                  <h3>ЖК "iLove"</h3>
-                  <b>ГК "КОРТРОС"</b>
-                  <p>Москва, Останкинский район, ул. Бочкова, 11а Бизнес <span>от 13 487 000</span> </p>
+                  <div class="card-offers__image">
+                    <img src="images/offers/offer-4.webp" alt="Фото ЖК" height="230" width="280">
+                  </div>
+                  <div class="card-offers__content">
+                    <p class="card-offers__copyright">Источник: freepik.ru</p>
+                    <h3>ЖК "iLove"</h3>
+                    <b>ГК "КОРТРОС"</b>
+                    <p>Москва, Останкинский район, ул. Бочкова, 11а <span>Бизнес</span> <span
+                        class="card-offers__price">от 13 487 000</span>
+                    </p>
+                  </div>
+
                 </a>
+                <button class="card-offers__button-show-tel button-global-style button">Показать телефон</button>
               </article>
             </li>
           </ul>
@@ -730,6 +759,10 @@
       </div>
     </div>
   </footer>
+
+  <button class="up-button button">
+    <span class="visually-hidden">Наверх</span>
+  </button>
   <script src="scripts/main.js" type="module"></script>
 </body>
 

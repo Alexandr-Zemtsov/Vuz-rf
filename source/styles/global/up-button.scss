@@ -1,0 +1,42 @@
+.up-button {
+  display: none;
+  position: fixed;
+  z-index: 100;
+  bottom: 25px;
+  right: 15px;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: $bottom-color;
+  transition: all 0.3s linear;
+}
+
+.up-button--shown {
+  display: block;
+}
+
+.up-button::after,
+.up-button::before {
+  content: "";
+  position: absolute;
+  display: block;
+  left: 50%;
+  width: 14px;
+}
+
+.up-button::after {
+  background-color: $color-white;
+  height: 1px;
+  top: 17px;
+  transform: translateX(-50%);
+}
+
+.up-button::before {
+  width: 10px;
+  height: 10px;
+  border-top: 1px solid $color-white;
+  border-left: 1px solid $color-white;
+  rotate: 45deg;
+  top: 31px;
+  transform: translateX(-69%);
+}

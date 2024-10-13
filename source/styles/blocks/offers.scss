@@ -1,0 +1,38 @@
+// --------- OFFERS --------//
+
+.offers {
+  padding: 21px 0;
+}
+
+.offers__inner {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+// .offers__title {
+// }
+
+.offers__list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 auto;
+    width: fit-content;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+.offers__item {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}

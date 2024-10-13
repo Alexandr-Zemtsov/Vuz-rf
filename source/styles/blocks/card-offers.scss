@@ -1,0 +1,98 @@
+// --------- CARD-OFFERS --------//
+
+.card-offers {
+  position: relative;
+  border-radius: 20px;
+  border: 1px solid $color-border;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  scrollbar-width: none;
+  max-width: 330px;
+
+  &:has(> .card-offers__link:hover, > .card-offers__link:focus-visible) {
+    border-color: $bottom-color;
+  }
+
+  @media (min-width: $tablet-width) {
+    max-width: 280px;
+  }
+}
+
+.card-offers__link {
+  display: flex;
+  flex-direction: column;
+
+  &:hover,
+  &:focus-visible {
+    opacity: 0.7;
+    outline: none;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+}
+
+.card-offers__image {
+  display: flex;
+  width: 100%;
+  height: 230px;
+}
+
+.card-offers__image img {
+  width: 100%;
+  display: block;
+}
+
+.card-offers__content {
+  display: flex;
+  flex-direction: column;
+  padding: 3px 5px 20px;
+  text-align: center;
+  color: $color-text;
+}
+
+.card-offers__content h3 {
+  margin-bottom: 17px;
+  font-size: 22px;
+  line-height: 1.2;
+}
+
+.card-offers__content p {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.card-offers__content b {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.card-offers__content span {
+  color: $bottom-color;
+}
+
+span.card-offers__price {
+  color: $color-price;
+  font-weight: bolder;
+}
+
+.card-offers__copyright {
+  font-size: 10px;
+  align-self: start;
+  margin-bottom: 75px;
+}
+
+.card-offers__button-show-tel {
+  position: absolute;
+  top: 265px;
+  left: 50%;
+  z-index: 5;
+  padding: 6px 5px;
+  transform: translateX(-50%);
+  font-size: 16px;
+  text-align: center;
+  width: 180px;
+}
