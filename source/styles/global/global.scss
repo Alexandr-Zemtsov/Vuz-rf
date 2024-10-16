@@ -51,14 +51,14 @@ body {
 .button-global-style {
   border-radius: 20px;
   border: 1px solid transparent;
-  background-color: $bottom-color;
+  background-color: $button-color;
   color: $color-white;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 
   &:hover,
   &:focus-visible {
-    border-color: $bottom-color;
-    color: $bottom-color;
+    border-color: $button-color;
+    color: $button-color;
     background-color: $color-white;
   }
 }

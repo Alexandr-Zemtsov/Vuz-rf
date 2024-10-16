@@ -7,11 +7,11 @@
 .offers__inner {
   display: flex;
   flex-direction: column;
-  gap: 30px;
 }
 
-// .offers__title {
-// }
+.offers__title {
+  margin-bottom: 30px;
+}
 
 .offers__list {
   display: flex;

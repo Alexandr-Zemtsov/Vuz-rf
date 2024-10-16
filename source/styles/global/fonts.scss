@@ -1,3 +1,5 @@
 @include font-face("Verdana", url("../../fonts/Verdana.woff2"), normal, 400);
 @include font-face("Verdana", url("../../fonts/Verdana-Bold.woff2"), normal, 700);
-
+@include font-face("OpenSans", url("../../fonts/OpenSans-Regular.woff2"), normal, 400);
+@include font-face("OpenSans", url("../../fonts/OpenSans-SemiBold.woff2"), normal, 600);
+@include font-face("OpenSans", url("../../fonts/OpenSans-Bold.woff2"), normal, 700);

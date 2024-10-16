@@ -11,7 +11,7 @@
   max-width: 330px;
 
   &:has(> .card-offers__link:hover, > .card-offers__link:focus-visible) {
-    border-color: $bottom-color;
+    border-color: $button-color;
   }
 
   @media (min-width: $tablet-width) {
@@ -71,7 +71,7 @@
 }
 
 .card-offers__content span {
-  color: $bottom-color;
+  color: $button-color;
 }
 
 span.card-offers__price {

@@ -1,0 +1,36 @@
+// --------- INFO --------//
+
+.info {
+  padding: 21px 0 40px;
+}
+
+.info__inner {
+  display: flex;
+  flex-direction: column;
+}
+
+.info__title {
+  margin-bottom: 30px;
+}
+
+.info__list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+
+  @media (min-width: $mobile-plus-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 40px;
+    column-gap: 30px;
+  }
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 20px;
+  }
+}
+
+.info__item {
+  display: flex;
+}

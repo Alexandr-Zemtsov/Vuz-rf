@@ -1,16 +1,16 @@
-const selectGroup = document.querySelectorAll('.filter-group');
-selectGroup.forEach((dropdownWrapper) => {
+const bodyElem = document.querySelector('body');
+
+
+document.querySelectorAll('.filter-group').forEach((dropdownWrapper) => {
   const selectButton = dropdownWrapper.querySelector('.filter-group__input--select');
   const dropDowninput = dropdownWrapper.querySelector('.filter-group__dropdown-hidden');
   const selectList = dropdownWrapper.querySelector('.filter-group__list-dropdown');
   const selectItem = dropdownWrapper.querySelectorAll('.select-list__item');
-  const bodyElem = document.querySelector('body');
 
-
-  selectButton.addEventListener('click', () => {
+  selectButton.onclick = function() {
     selectList.classList.toggle('filter-group__list-dropdown--open');
-    selectButton.classList.toggle('filter-group__input--active');
-  });
+    this.classList.toggle('filter-group__input--active');
+  };
 
   selectItem.forEach((element) => {
     const text = element.textContent;
@@ -39,3 +39,5 @@ selectGroup.forEach((dropdownWrapper) => {
   });
 
 });
+
+
