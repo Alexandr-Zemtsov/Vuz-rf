@@ -15,6 +15,15 @@
 
 .card-info__picture {
   margin-bottom: 20px;
+
+  &:hover,
+  &:focus-visible {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .card-info__picture img {
@@ -34,6 +43,15 @@
   font-size: 18px;
   text-decoration: none;
   line-height: 1.2;
+
+  &:hover,
+  &:focus-visible {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .card-info__link-more {

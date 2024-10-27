@@ -8,7 +8,6 @@
   <link rel="icon" href="#">
   <link rel="icon" href="#" type="image/svg+xml">
   <link rel="apple-touch-icon" href="#">
-  <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="styles/styles.css">
 
 </head>
@@ -89,53 +88,56 @@
 
         <div class="hero__wrapper">
           <h1 class="hero__title">Вузы РФ</h1>
-          <form class="form-filter" action="#" method="post">
+          <form class="form-filter" action="https://echo.htmlacademy.ru/" method="post">
             <ul class="form-filter__list list">
               <li class="form-filter__item">
-                <fieldset class="filter-group">
-                  <legend class="filter-group__title filter-group__title--select">Выберите город</legend>
-                  <button class="filter-group__input filter-group__input--select" id="select-house-level" name="city"
-                    type="button">Выберите город</button>
-                  <input class="filter-group__dropdown-hidden" name="city" type="text" value="">
-                  <ul class="filter-group__list-dropdown select-list list" id="select-city">
-                    <li class="select-list__item" tabindex="0" data-value="0">Москва</li>
-                    <li class="select-list__item" tabindex="0" data-value="1">Санкт-Петербург</li>
-                    <li class="select-list__item" tabindex="0" data-value="2">Казань</li>
-                    <li class="select-list__item" tabindex="0" data-value="3">Самара</li>
-                    <li class="select-list__item" tabindex="0" data-value="4">Саратов</li>
-                  </ul>
+                <fieldset class="form-filter__fieldset filter-select">
+                  <legend class="form-filter__legend filter-select__title">Выберите город</legend>
+                  <div class="filter-select__dropdown">
+                    <button class="filter-group__input filter-group__input--select filter-select__button" id="select-house-level" name="city"
+                      type="button">Выберите город</button>
+                    <input class="filter-group__dropdown-hidden filter-select__input" name="city" type="text" value="">
+                    <ul class="filter-group__list-dropdown filter-select__list list" id="select-city">
+                      <li class="filter-select__item" tabindex="0" data-value="Moscow">Москва</li>
+                      <li class="filter-select__item" tabindex="0" data-value="St-Peterburg">Санкт-Петербург</li>
+                      <li class="filter-select__item" tabindex="0" data-value="Kazan">Казань</li>
+                      <li class="filter-select__item" tabindex="0" data-value="Samara">Самара</li>
+                      <li class="filter-select__item" tabindex="0" data-value="Saratov">Саратов</li>
+                    </ul>
+                  </div>
+
                 </fieldset>
 
 
               </li>
               <li class="form-filter__item">
-                <fieldset class="filter-group">
-                  <legend class="filter-group__title filter-group__title--select">Выберите город</legend>
-                  <button class="filter-group__input filter-group__input--select" id="select-repair" name="city"
-                    type="button">Выберите город</button>
-                  <input class="filter-group__dropdown-hidden" name="city" type="text" value="">
-                  <ul class="filter-group__list-dropdown select-list list" id="select-level">
-                    <li class="select-list__item" tabindex="0" data-value="0">Москва</li>
-                    <li class="select-list__item" tabindex="0" data-value="1">Санкт-Петербург</li>
-                    <li class="select-list__item" tabindex="0" data-value="2">Казань</li>
-                    <li class="select-list__item" tabindex="0" data-value="3">Самара</li>
-                    <li class="select-list__item" tabindex="0" data-value="4">Саратов</li>
-                  </ul>
+                <fieldset class="form-filter__fieldset filter-select">
+                  <legend class="form-filter__legend filter-select__title">Выберите город</legend>
+                  <div class="filter-select__dropdown">
+                    <button class="filter-group__input filter-group__input--select filter-select__button" id="select-repair" name="city"
+                      type="button">Выберите город</button>
+                    <input class="filter-group__dropdown-hidden filter-select__input" name="city" type="text" value="">
+                    <ul class="filter-group__list-dropdown filter-select__list list" id="select-level">
+                      <li class="filter-select__item" tabindex="0" data-value="Moscow">Москва</li>
+                      <li class="filter-select__item" tabindex="0" data-value="St-Peterburg">Санкт-Петербург</li>
+                      <li class="filter-select__item" tabindex="0" data-value="Kazan">Казань</li>
+                      <li class="filter-select__item" tabindex="0" data-value="Samara">Самара</li>
+                      <li class="filter-select__item" tabindex="0" data-value="Saratov">Саратов</li>
+                    </ul>
+                  </div>
+
                 </fieldset>
-
-
-
               </li>
               <li class="form-filter__item">
-                <fieldset class="filter-group">
-                  <legend class="filter-group__title">Год сдачи</legend>
-                  <div class="filter-group__range">
-                    <label class="filter-group__range-container">
-                      <input class="filter-group__range-input" type="number" placeholder="От" name="min-price" value=""
+                <fieldset class="form-filter__fieldset">
+                  <legend class="form-filter__legend">Год сдачи</legend>
+                  <div class="filter-range">
+                    <label class="filter-range__container">
+                      <input class="filter-range__input" type="number" placeholder="От" name="min-years" value=""
                         min="2020">
                     </label>
-                    <label class="filter-group__range-container">
-                      <input class="filter-group__range-input" type="number" placeholder="До" name="max-price" value=""
+                    <label class="filter-range__container">
+                      <input class="filter-range__input" type="number" placeholder="До" name="max-years" value=""
                         max="2036">
                     </label>
                   </div>

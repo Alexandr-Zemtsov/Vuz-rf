@@ -1,43 +1,37 @@
-const bodyElem = document.querySelector('body');
+document.querySelectorAll('.filter-select__dropdown').forEach((dropdown) => {
+  const selectButton = dropdown.querySelector('.filter-select__button');
+  const selectList = dropdown.querySelector('.filter-select__list');
+  const selectItemList = selectList.querySelectorAll('.filter-select__item');
+  const selectInput = dropdown.querySelector('.filter-select__input');
 
+  selectButton.addEventListener('click', () => {
+    selectList.classList.toggle('filter-select__list--visible');
+    selectButton.classList.toggle('filter-select__button--active');
+  });
 
-document.querySelectorAll('.filter-group').forEach((dropdownWrapper) => {
-  const selectButton = dropdownWrapper.querySelector('.filter-group__input--select');
-  const dropDowninput = dropdownWrapper.querySelector('.filter-group__dropdown-hidden');
-  const selectList = dropdownWrapper.querySelector('.filter-group__list-dropdown');
-  const selectItem = dropdownWrapper.querySelectorAll('.select-list__item');
-
-  selectButton.onclick = function() {
-    selectList.classList.toggle('filter-group__list-dropdown--open');
-    this.classList.toggle('filter-group__input--active');
-  };
-
-  selectItem.forEach((element) => {
-    const text = element.textContent;
-
-    element.addEventListener('click', (evt) => {
+  selectItemList.forEach((listItem) => {
+    listItem.addEventListener('click', (evt) => {
       evt.stopPropagation();
-      selectButton.textContent = text;
-      dropDowninput.value = text;
-      selectList.classList.remove('filter-group__list-dropdown--open');
-      selectButton.classList.remove('filter-group__input--active');
+      selectButton.textContent = listItem.textContent;
+      selectButton.focus();
+      selectInput.value = listItem.dataset.value;
+      selectList.classList.remove('filter-select__list--visible');
     });
   });
 
-  bodyElem.addEventListener('click', (evt) => {
+  document.addEventListener('click',(evt) => {
+
     if (evt.target !== selectButton) {
-      selectList.classList.remove('filter-group__list-dropdown--open');
-      selectButton.classList.remove('filter-group__input--active');
+      selectButton.classList.remove('filter-select__button--active');
+      selectList.classList.remove('filter-select__list--visible');
     }
   });
+
 
   document.addEventListener('keydown', (evt) => {
     if (evt.key === 'Tab' || evt.key === 'Escape') {
-      selectList.classList.remove('filter-group__list-dropdown--open');
-      selectButton.classList.remove('filter-group__input--active');
+      selectButton.classList.remove('filter-select__button--active');
+      selectList.classList.remove('filter-select__list--visible');
     }
   });
-
 });
-
-

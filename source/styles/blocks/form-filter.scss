@@ -31,6 +31,24 @@
 // .form-filter__item {
 // }
 
+.form-filter__fieldset {
+  border: none;
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    row-gap: 10px;
+  }
+}
+
+.form-filter__legend {
+  font-size: 12.5px;
+  margin-left: 5px;
+  margin-bottom: 10px;
+}
+
 .form-filter__block-submit {
   display: flex;
   justify-content: center;
